@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- CDN Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <!-- CDN Font Awesome -->
+
+    <title>Lukita Iswara Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="images/logo.png" class="logo">-->
+                <div class="MyLogo">
+                    <h2><span>Luk</span>ita</h2>
+                    <h2><span>Luk</span>ita</h2>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header" class="activeMenu">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!--
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Lukita</span> <br> Iswara From Indonesia</h1>
+            </div>-->
+
+        </div>
+    </div>
+    <!-----------------------Home---------------------->
+    <div class="home" id="home">
+        <div class="container special">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Lukita Iswara</span></h1>
+                <div class="text-animate">
+                    <h3 data-text="Software★Developer">Software★Developer</h3>
+                </div>
+                <p> &ensp;&ensp;I'm a recent graduate in Indonesia seeking opportunities in software development,
+                    data analysis, game development, or related programming fields. 
+                    If you have any openings, I'm ready to bring my enthusiasm and dedication to your team.
+                   
+                </p>
+                <div class="btn-box">
+                    <a href="images/myCV.pdf" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            
+            </div>
+    
+            <div class="home-imgHover"></div>
+        </div>
+    </div>
+    <!-----------------------About--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cropImage.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an AI enthusiast with a strong foundation in AI, Machine Learning,
+                        Deep Learning, Computer Vision, and AI in gaming. While I am in the early
+                        stages of my career, my passion for AI technologies fuels my desire to learn and
+                        contribute to the field. I am actively seeking entry-level opportunities to apply
+                        my knowledge and continue developing my skills while making a meaningful
+                        contribution to the team's goals. Suppose you are looking for a motivated
+                        individual dedicated to growing within the AI field and eager to learn and
+                        contribute.</p>
+                    <div class="tab-titles">
+                        <!--<p class="tab-links" onclick="opentab('skills')">Skills</p>-->
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!--
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Developing Software</li>
+                            <li><span>Web Development</span><br>Desinging Web app Development</li>
+                            <li><span>App Development</span><br>Designing Web/App Interface</li>
+                            <li><span>AI Development</span><br>Developing Machine/Deep Learning</li>
+                        </ul>
+                    </div>-->
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>09/2022 to 08/2023</span><br>Web Developer Internship - PT APIKKO, Surabaya</li>
+                            <li><span>08/2018 to Present</span><br>Social Worker - Tzu Chi Foundation, Surabaya</li>
+                            <li><span>02/2024 to Present</span><br>Online Seller - Vartenlia Shop<br>Link : <a href="https://shopee.co.id/lukidharma">https://shopee.co.id/lukidharma</a></li>
+                            <li><span>01/2024 to Present</span><br>APP Developer Internship - PT APIKKO, Surabaya</li>
+                   
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>08/2019 to 08/2023</span><br>University of Surabaya |
+                                Bachelor of Information Technology</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------About--------------------->
+
+    <!-----------------------Skills--------------------->
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            
+            <div class="skills__container">
+                <!--==================== SKILLS 1 ====================-->
+               <div class="skills__content">
+                   
+                   <div class="skills__info">
+                         <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/icons8-figma.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">Figma</h3>
+                            <span class="skills__subtitle">1 Year Experience</span>
+                        </div>
+                           <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/React-icon.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__subtitle">2 Year Experience</span>
+                        </div>
+                       <div class="skills__data">
+                           <div class="skills__blob">
+                               <img src="images/html-1.svg" alt="skills image">
+                           </div>                                
+                           <h3 class="skills__name">HTML</h3>
+                       <span class="skills__subtitle">2 Years Experience</span>
+                       </div>
+                       <div class="skills__data">
+                           <div class="skills__blob">
+                               <img src="images/css-3.svg" alt="skills image">
+
+                           </div>                                
+                           <h3 class="skills__name">CSS</h3>
+                       <span class="skills__subtitle">2 Years Experience</span>
+                       </div>
+                       <div class="skills__data">
+                           <div class="skills__blob">
+                               <img src="images/logo-javascript.svg" alt="skills image">
+
+                           </div>                                
+                           <h3 class="skills__name">JavaScript</h3>
+                           <span class="skills__subtitle">1 Years Experience</span>
+                       </div>
+                       <div class="skills__data">
+                           <div class="skills__blob">
+                               <img src="images/unity-69.svg" alt="skills image">
+
+                           </div>                                
+                           <h3 class="skills__name">Unity</h3>
+                           <span class="skills__subtitle">1 Years Experience</span>
+                       </div>
+                       <div class="skills__data">
+                           <div class="skills__blob">
+                               <img src="images/python-5.svg" alt="skills image">
+
+                           </div>                                
+                           <h3 class="skills__name">Python</h3>
+                           <span class="skills__subtitle">6 Years Experience</span>
+                       </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/tensorflow-2.svg" alt="skills image">
+
+                            </div>                                
+                            <h3 class="skills__name">Tensorflow</h3>
+                            <span class="skills__subtitle">2 Years Experience</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/java-4.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">Java</h3>
+                            <span class="skills__subtitle">3 Years Experience</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/php-1.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">PHP</h3>
+                            <span class="skills__subtitle">2 Years Experience</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/c.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">C++</h3>
+                            <span class="skills__subtitle">2 Years Experience</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/c--4.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">C#</h3>
+                            <span class="skills__subtitle">2 Years Experience</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/kotlinlang-icon.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">Kotli</h3>
+                            <span class="skills__subtitle">1 Years Experience</span>
+                        </div>
+                       
+
+                          <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/mysql-icon.svg" alt="skills image">
+                            </div>                                
+                            <h3 class="skills__name">MySQL</h3>
+                            <span class="skills__subtitle">3 Years Experience</span>
+                        </div>
+
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <!-----------------------Skills--------------------->
+
+    <!-----------------------Portfolio--------------------->
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="portfolio-list">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/ChurchWebBook.png" alt="UTS AI Club Website UI Design">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Bethany Sydney</h3>
+                    <p>This is a church website that provides details about services, events, and contact information. It features sections for news (Warta), blogs, sermons, Family Altar (for small groups and community members), an About Us section, and donation options. The website lists Sunday services available in both Indonesian and English, as well as Sunday School. Contact details including an address, phone number, and email addresses for general inquiries and prayer requests are also provided.</p>
+                    <a href="https://www.bethanysydney.org.au/" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+               
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/eventhome.png" alt="UTS AI Club Website UI Design">
+                </div>
+                <div class="portfolio-details">
+                    <h3>UTS AI Club Website UI Design</h3>
+                    <p>Designed and developed the user interface (UI) for the official UTS AI Club website, focusing on creating an intuitive, engaging, and modern digital presence. This project involved wireframing, prototyping, and iterating on design elements to ensure a seamless user experience for club members and prospective students, effectively showcasing club activities, events, and resources.</p>
+                    <a href="https://www.figma.com/design/uR7lEutQDV9nGmuSFxaw25/UTS-AI-Society?node-id=0-1&t=HRV4SSmIOBVQe0Ji-1" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/appDesign.png" alt="E-commerce Mobile App UI Design">
+                </div>
+                <div class="portfolio-details">
+                    <h3>E-commerce Mobile App UI Design</h3>
+                    <p>This e-commerce mobile app UI was designed using Figma to deliver a clean, modern, and user-friendly shopping experience. It features key screens including Home, Shop, Cart, and Product Detail—each designed with a dark theme to highlight visuals and maintain a premium look. The layout is intuitive, with clear navigation, product ratings, pricing, and a simple checkout process. Built with consistency and mobile responsiveness in mind, this design offers both aesthetic appeal and functional clarity for online shoppers.</p>
+                    <a href="https://www.figma.com/design/cUke4YNsbFpBgZm8p4fDyK/LukitaProject?node-id=0-1&t=Bx49qoKfAaum1saO-1" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/realEstate.png" alt="Modern Real Estate Web Platform">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Modern Real Estate Web Platform</h3>
+                    <p>Designed and developed a contemporary real estate website, showcasing diverse property listings, intuitive search functionalities, and comprehensive information for buyers, sellers, and renters. The platform emphasizes a user-centric experience with a focus on clear navigation and engaging visuals.</p>
+                    <a href="https://www.figma.com/design/eh3U8585iY9dDVNN20ub7E/realEstate-TemplateLuki?node-id=0-1&t=jssof6XOnhQDkIB7-1" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/churchweb.png" alt="Modern Real Estate Web Platform">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Community-Focused Church Website Design</h3>
+                    <p>Developed a responsive website for a church, featuring event showcases, a "Warta" (news/blog) section, and a dedicated "Family Altar" page to highlight small groups and community members. The design emphasizes clear navigation and a welcoming aesthetic to connect with the congregation and wider community.</p>
+                    <a href="https://www.figma.com/design/O1y3oXGgMldZtAuH4KgyTk/churchDesign?node-id=0-1&t=of6FlbeyAitZ2OnE-1" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/phone3.png" alt="Engaging Education & Community App UI">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Engaging Education & Community App UI</h3>
+                    <p>Designed a user-friendly mobile application interface for an education and community platform. The UI features a personalized learning dashboard, interactive challenges, a content library, and a community hub to foster collaborative learning and skill development.</p>
+                    <a href="https://www.figma.com/design/L4OzSphEXnXFfm0i1PQE5D/Vartenlis-Project?node-id=0-1&t=2U9KeLep20YXEK4l-1" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/robotDetect.png" alt="ID Card Identification Project">
+                </div>
+                <div class="portfolio-details">
+                    <h3>ID Card Identification</h3>
+                    <p>A machine learning project focused on identifying information from ID cards using computer vision techniques. This project demonstrates skills in image processing and data extraction.</p>
+                    <a href="https://colab.research.google.com/drive/10ckTY3slE4NpgEFwlRSBo_TpPBYz0WFr?usp=sharing" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/AStar.png" alt="A Star Path Finding Game Project">
+                </div>
+                <div class="portfolio-details">
+                    <h3>A* Path Finding Game</h3>
+                    <p>An interactive game developed to visualize and demonstrate the A* pathfinding algorithm. This showcases game development and algorithm implementation skills.</p>
+                    <a href="https://github.com/Luki160919005/BlackHand_project" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-----------------------Portfolio--------------------->
+
+    <!-----------------------Contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>1lukikho@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+6281293971098</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lukita-iswara-0a1125288/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Luki160919005"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/myCV.pdf" download Class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Lukita.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <!-----------------------Contact--------------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            //move the active link
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0eBa-VSMQ-mRgNt-Lc7D-2T1FiC0CK-9my1HUGcBRRpUsWFoNNC4AsNVqk_vg0BjGrA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiperCards = new Swiper(".cardsWork", {
+            loop: true,
+            spaceBetween: 32,
+            grabCursor: true,
+          
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            },
+          
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          
+            breakpoints:{
+              968: {
+                slidesPerView: 3,
+              },
+            },
+        });
+    </script>
+    
+</body>
+</html>
